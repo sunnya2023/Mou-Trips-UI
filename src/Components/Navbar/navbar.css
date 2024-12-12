@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/*Colors*/
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hs1(14, 96%, 91%);
+  --bgColor: hs1(0, 0%, 100%);
+  --formColor: hs1(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hs1(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hs1(300, 3%, 94%);
+  /* Font ang Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  position: fixed;
+  border-bottom: 1px solid var(--primaryColor);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.navBar .logoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navBar .logoDiv span {
+  color: var(--blackColor);
+  font-size: var(--h3FontSize);
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .navBar .menu {
+    position: absolute;
+    width: 70%;
+    top: -100rem;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgba(255, 255, 255, 0.94);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: 0.8s ease-in-out;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    box-shadow: 0 2px 3px 4px rgba(236, 213, 213, 0.516);
+  }
+  .navBar .menu li {
+    font-size: var(--h3FontSize);
+    font-weight: 500;
+    padding: 1rem 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  .navBar .menu li:hover {
+    color: var(--primaryColor);
+    border-bottom: 1.5px solid var(--primaryColor);
+  }
+  .navBar .closeIcon,
+  .navBar .menuIcon {
+    font-size: var(--h1FontSize);
+  }
+  .navBar .closeIcon:hover,
+  .navBar .menuIcon:hover {
+    color: var(--primaryColor);
+  }
+  .navBar .closeIcon {
+    position: absolute;
+    bottom: -15px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .navBar .showNavbar {
+    top: 8rem;
+  }
+}/*# sourceMappingURL=navbar.css.map */
