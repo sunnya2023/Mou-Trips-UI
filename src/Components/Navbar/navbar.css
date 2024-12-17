@@ -2,17 +2,17 @@
 /*Colors*/
 :root {
   --primaryColor: hsl(14, 90%, 53%);
-  --primaryColorLight: hs1(14, 96%, 91%);
-  --bgColor: hs1(0, 0%, 100%);
-  --formColor: hs1(20, 42%, 87%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0, 100%);
+  --formColor: hsl(20, 42%, 87%);
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(0, 0%, 18%);
-  --greyText: hs1(0, 0%, 51%);
+  --greyText: hsl(0, 0, 51%);
   --inputColor: hsl(330, 12%, 97%);
-  --cardColor: hs1(300, 3%, 94%);
+  --cardColor: hsl(300, 3%, 94%);
   /* Font ang Typography */
   --biggestFontSize: 2.5rem;
-  --h1FontSize: 2rem;
+  --h1FontSize: 1.6rem;
   --h2FontSize: 1.25rem;
   --h3FontSize: 1rem;
   --normalFontSize: 0.938rem;
@@ -28,9 +28,10 @@
   width: 100%;
   padding: 1.5rem 2rem;
   position: fixed;
-  border-bottom: 1px solid var(--primaryColor);
+  border-bottom: 1px solid rgb(211, 211, 211);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  z-index: 100;
 }
 .navBar .logoDiv {
   display: flex;

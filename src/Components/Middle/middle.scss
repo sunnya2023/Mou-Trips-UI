@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*Colors*/
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+
+  /* Font ang Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.middle {
+  width: 100%;
+
+  .secContainer {
+    .grid {
+      padding: 3rem;
+      background: var(--primaryColorLight);
+      border-radius: var(--borderRadius);
+      //   margin: auto;
+      //   justify-content: center;
+      gap: 2rem;
+
+      span {
+        justify-content: center;
+        gap: 0.5rem;
+
+        h1 {
+          color: var(--blackColor);
+          font-size: var(--h1FontSize);
+          font-weight: 700;
+        }
+        p {
+          opacity: 0.8;
+          //   max-width: 80px;
+        }
+      }
+    }
+  }
+}
