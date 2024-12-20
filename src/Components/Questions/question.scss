@@ -1,0 +1,86 @@
+@import "../../App.scss";
+
+.accordionContainer {
+  .title {
+    font-size: var(--normalFontSize);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 10px;
+    background: var(--primaryColorLight);
+
+    span {
+      cursor: pointer;
+
+      .icon {
+        font-size: 1.2rem;
+        color: var(--blackColor);
+      }
+    }
+  }
+  .description {
+    font-size: var(--smallFontSize);
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    // white-space: pre-line;
+    height: 140px;
+    // transition: all 0.3s ease-in-out;
+    opacity: 1;
+    padding: 0 1rem;
+    border-radius: 0 0 10px 10px;
+    background: var(--cardColor);
+    color: var(--blackColor);
+  }
+
+  //   .show {
+  //     height: 140px;
+  //     opacity: 1;
+  //   }
+
+  .activeTitle {
+    background: var(--primaryColorLight);
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+// Questions
+
+.questions {
+  .secHeading {
+    h3,
+    h4 {
+      padding-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: var(--smallFontSize);
+      color: var(--blackColor);
+      padding-bottom: 1rem;
+    }
+  }
+
+  .form {
+    .formContent {
+      gap: 1rem;
+
+      input,
+      textarea {
+        background: var(--cardColor);
+        width: 100%;
+        padding: 1rem;
+        border-radius: var(--borderRadius);
+
+        &::placeholder {
+          font-size: var(--smallFontSize);
+          color: var(--blackColor);
+        }
+      }
+
+      textarea {
+        height: 100px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

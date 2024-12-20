@@ -71,7 +71,8 @@ video {
   width: 100%;
 }
 
-input {
+input,
+textarea {
   border: none;
   outline: none;
 }

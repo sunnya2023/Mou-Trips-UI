@@ -1,0 +1,18 @@
+@import "../../App.scss";
+
+.subscribe {
+  .secContainer {
+    .textDiv {
+      h4 {
+        font-size: var(--h2FontSize);
+        color: var(--blackColor);
+      }
+      p {
+        padding: 1rem 0;
+      }
+      .btn {
+        padding: 0.5rem 2rem;
+      }
+    }
+  }
+}

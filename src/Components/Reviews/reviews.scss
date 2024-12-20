@@ -1,0 +1,56 @@
+@import "../../App.scss";
+
+.review {
+  .secContainer {
+    .textDiv {
+      .redText {
+        font-size: var(--smallFontSize);
+        display: block;
+        color: var(--primaryColor);
+        font-weight: 700;
+      }
+
+      h3 {
+        font-size: var(--h2FontSize);
+        color: var(--blackColor);
+        padding: 1rem 0;
+      }
+
+      p {
+        color: var(--blackColor);
+      }
+
+      .stars {
+        gap: 0.4rem;
+        padding: 1rem 0;
+        .icon {
+          color: var(--primaryColor);
+          font-size: var(--h3FontSize);
+        }
+      }
+
+      .clientsImages {
+        gap: 1rem;
+        img {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 2px solid rgb(255, 255, 255);
+          box-shadow: 0 0 2px 2px rgb(251, 212, 194);
+        }
+      }
+    }
+
+    .imgDiv {
+      height: 250px;
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+}
